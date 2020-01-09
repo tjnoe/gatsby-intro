@@ -1,5 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
+import Header from './header'
 
 const Layout = ({ children }) => (
   <>
@@ -22,11 +23,11 @@ const Layout = ({ children }) => (
             Helvetica, Arial, sans-serif;
           font-size: 18px;
           line-height: 1.4;
-        }
 
-        /* remove margin for the main div that Gatsby mounts into */
-        > div {
-          margin-top: 0;
+          /* remove margin for the main div that Gatsby mounts into */
+          > div {
+            margin-top: 0;
+          }
         }
 
         h1,
@@ -52,7 +53,7 @@ const Layout = ({ children }) => (
         }
       `}
     />
-    <header></header>
+    <Header />
     <main
       css={css`
         margin: 2rem auto 4rem;
